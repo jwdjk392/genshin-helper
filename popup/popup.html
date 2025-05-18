@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../res/materialize.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--Header-->
+        <div class="d-flex">
+            <h4 id="title">Hoyoverse Game Helper</h4>
+            <button class="waves-effect waves-light btn" id="option-btn">Option</button>
+        </div>
+        <blockquote id="dev-sign-blockquote">
+            Developed by Jeongwan Bae. / Project Link / Privacy notice
+        </blockquote>
+        <!--Tab-->
+        <ul id="tabs-swipe" class="tabs">
+            <li class="tab col s3"><a href="#swipe-1">Live state</a></li>
+            <li class="tab col s3"><a href="#swipe-2">Tools</a></li>
+            <li class="tab col s3"><a href="#swipe-3">About</a></li>
+        </ul>
+        <!--Tab content-->
+        <div id="swipe-1" class="col s12">
+            <!--Live state tab content-->
+            <div id="live-state-tab-content">
+            </div>
+        </div>
+        <div id="swipe-2" class="col s12">
+            <!--Tools tab content-->
+            <div>
+                <h5 id="redeem-code">Redeem Code</h5>
+                <div class="input-field">
+                    <input placeholder="Enter code" type="text" id="redeem-code-input" class="validate">
+                    <label for="redeem-code-input" id="redeem-code-input-title">Redeem Code</label>
+                </div>
+                <button class="waves-effect waves-light btn" id="redeem-btn">Redeem</button>
+            </div>
+            <div>
+                <h5 id="auto-checkin">Auto Check-In</h5>
+                <p class="flow-text" id="auto-checkin-status"><!--Auto Check-In is enabled! Today's check-in is completed.--></p>
+            </div>
+        </div>
+        <div id="swipe-3" class="col s12">
+            <!--About tab content-->
+            <h5 id="about-title">Genshin Helper</h5>
+            <p class="flow-text" id="about-desc"></p>
+            <a href="https://github.com/jwdjk392/genshin-helper/blob/main/LICENSE.md" class="flow-text" target="_blank">LICENSE</a>
+            <p id="about-version"><!--Latest version: X.X.X / Current version: X.X.X--></p>
+            <a class="waves-effect waves-light btn" id="about-update-btn" target="_blank">Follow guide on how to update</a>
+        </div>
+        <script src="../res/jquery-3.7.1.min.js"></script>
+        <script src="../res/materialize.min.js"></script>
+        <script src="popup.js"></script>
+    </body>
+</html>
