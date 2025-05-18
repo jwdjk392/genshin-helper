@@ -22,6 +22,9 @@ English | [한국어](https://github.com/jwdjk392/genshin-helper/blob/main/READM
 1. Uninstall like any other extension.
 2. Delete the folder you had unzipped.
 ## Updating
+### Via store
+Update your extension via store you installed
+### Manually
 Uninstall & Reinstall the extension.
 ## Contributing
 Feel free to open pull request, issues.
