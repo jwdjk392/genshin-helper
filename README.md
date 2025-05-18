@@ -7,7 +7,16 @@ English | [한국어](https://github.com/jwdjk392/genshin-helper/blob/main/READM
 - See resin stat
 - Redeem codes
 ## Hey! Is this safe to use? Wouldn't this get my account hacked?
-> Absolutely safe. We do not collect your sensitive information. Everything is processed inside your browser and sent nowhere except ```*.hoyolab.com```
+> Absolutely safe. We do not collect or save your sensitive information. Everything is processed inside your browser and sent nowhere except ```*.hoyolab.com``` and ```hoyoverse.com```
+### How it works:
+1. The extension declares access permission to ```*.hoyolab.com``` in its manifest file.
+2. When the extension makes a request to Hoyolab or Hoyoverse APIs, **your browser automatically includes any relevant cookies** associated with those domains (if you're logged in).
+3. **We do not read, store, or manipulate your cookies directly.**
+4. Curious or cautious? You’re welcome to inspect the source code yourself — especially `background.js` and `popup/popup.js`, which handle all API-related logic.
+
+This extension is fully open-source and transparent.
+
+
 ## License
 ```GNU GPLv3```
 ## How to install
