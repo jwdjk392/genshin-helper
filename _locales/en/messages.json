@@ -4,7 +4,7 @@
         "description": "The name of the extension"
     },
     "extDesc": {
-        "message": "A Chrome extension that comes handy while playing Genshin Impact. This extension is not affiliated with HoYoverse.",
+        "message": "An extension that comes handy while playing Genshin Impact. This extension is not affiliated with HoYoverse.",
         "description": "The description of the extension"
     },
     "popupResinState": {
