@@ -20,6 +20,12 @@ This extension is fully open-source and transparent.
 ## License
 ```GNU GPLv3```
 ## How to install
+### Via web store
+Click the link for your browser and then click install.
+- Naver Whale Browser: [https://store.whale.naver.com/detail/mfgkhldgnockogpfcmbgejdonnecmkch](https://store.whale.naver.com/detail/mfgkhldgnockogpfcmbgejdonnecmkch)
+- Microsoft Edge: Currently under review.
+### Manually
+This method is compatible with most of chromium based browsers.
 1. Download .zip file from latest [release](https://github.com/jwdjk392/genshin-helper/releases).
 2. Unzip it to where you like it to be. **Note:** You should not delete this folder after install.
 3. Open chrome (or chromium based browser), go to [extension](chrome://extensions), and enable ```Developer Mode```

@@ -19,6 +19,12 @@
 ## 라이선스
 ```GNU GPLv3```
 ## 설치 방법
+### 웹 스토어를 통한 설치
+사용하는 브라우저에 맞는 설치 링크를 이용해서 접속한 후 설치하세요.
+- 네이버 웨일 브라우저: [https://store.whale.naver.com/detail/mfgkhldgnockogpfcmbgejdonnecmkch](https://store.whale.naver.com/detail/mfgkhldgnockogpfcmbgejdonnecmkch)
+- MS 엣지 브라우저: 심사중
+### 수동 설치
+크로뮴 기반 브라우저라면 대부분 호환됩니다.
 1. 최신 [릴리즈](https://github.com/jwdjk392/genshin-helper/releases)에서 ```.zip``` 파일을 다운로드하세요.
 2. 원하는 폴더에 압축풀기. **주의:** 설치 후 이 폴더를 삭제하면 안됩니다.
 3. 크롬 (혹은 Chromium 기반 브라우저)를 열고, [확장 프로그램](chrome://extensions)으로 이동하고, ```개발자 모드```를 활성화하세요.
