@@ -21,8 +21,8 @@ function reRegisterContextMenu() {
 
     chrome.contextMenus.onClicked.addListener((data) => {
         if (data.menuItemId == "redeem") {
-            console.log(data.selectionText)
-            let code = data.selectionText.replace("/\s+/g", '')
+            let code = data.selectionText.replace(/\s+/g, '')
+            console.log(code)
             const url = chrome.i18n.getMessage("redeemUrl") + encodeURIComponent(code)
             console.log("Opening new tab ", url)
             chrome.tabs.create({url});
