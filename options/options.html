@@ -8,9 +8,16 @@
     <body style="margin: 5px 5px">
         <h5 id="auto-checkin">Auto check-in</h1>
         <label for="auto-checkin-switch">
-            <input type="checkbox" id="auto-checkin-switch">
+            <input type="checkbox" id="auto-checkin-switch" data-settings="true" data-settingsid="autoCheckIn">
             <span id="auto-checkin-switch-text">Use Auto Check-In</span>
         </label>
+        <!-- This is currently under testing. It is found that Hoyolab's login and Hoyoverse's login is SEPERATE.
+        <h5 id="redeem-method">Redeem Code Process Method</h5>
+        <label for="redeem-method-switch" id="redeem-method">
+            <input type="checkbox" id="redeem-method-switch" data-settings="true" data-settingsid="redeemUsingAPI">
+            <span id="redeem-method-switch-text">Use API to redeem code</span>
+            <p id="redeem-method-description">If disabled, redeem code will be processed by opening new tab <code>https://genshin.hoyoverse.com/gift</code></p>
+        </label>-->
         <script src="../res/jquery-3.7.1.min.js"></script>
         <script src="../res/materialize.min.js"></script>
         <script src="./options.js"></script>

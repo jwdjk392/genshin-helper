@@ -147,6 +147,22 @@
         "message": "자동 출석 체크 사용",
         "description": "옵션 화면에서 자동 출석 체크 스위치."
     },
+    "optionRedeemMethod": {
+        "message": "리딤 코드 처리 방식",
+        "description": "옵션 화면에서 리딤 코드 처리 방식 옵션 제목"
+    },
+    "optionRedeemMethodSwitch": {
+        "message": "리딤 코드를 처리하기 위해 API 직접 접근",
+        "description": "옵션 화면면의 리딤 코드 입력 상자 스위치"
+    },
+    "optionRedeemMethodSwitchDescription": {
+        "message": "비활성화하면 리딤 코드는 새 탭을 열어서 처리됩니다.",
+        "description": "옵션화면의 리딤 코드 처리 방식에 대한 추가 설명."
+    },
+    "contextMenuRedeem": {
+        "message": "이 코드를 원신에서 교환하기",
+        "description": "컨텍스트 메뉴의 교환 옵션."
+    },
     "pleaseWait": {
         "message": "잠시 기다려주세요..."
     },

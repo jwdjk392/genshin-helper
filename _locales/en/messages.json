@@ -155,6 +155,22 @@
         "message": "Use auto check in",
         "description": "Use auto check in switch in option page."
     },
+    "optionRedeemMethod": {
+        "message": "Redeem code processing method",
+        "description": "Redeem code processing method header in option page."
+    }, 
+    "optionRedeemMethodSwitch": {
+        "message": "Use API directly to process redeem code",
+        "description": "Redeem code processing method switch in option page."
+    },
+    "optionRedeemMethodSwitchDescription": {
+        "message": "If disabled, redeem code will be processed by opening new tab.",
+        "description": "Additional description about redeem code processing method in option page."
+    },
+    "contextMenuRedeem": {
+        "message": "Redeem this code for Genshin",
+        "description": "Redeem code option in context menu."
+    },
     "pleaseWait": {
         "message": "Please wait..."
     },

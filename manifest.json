@@ -20,7 +20,8 @@
     "permissions": [
         "tabs",
         "storage",
-        "notifications"
+        "notifications",
+        "contextMenus"
     ],
     "host_permissions": [
         "https://*.hoyolab.com/*"

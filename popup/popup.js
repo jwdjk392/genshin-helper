@@ -36,9 +36,16 @@ function loadLocale() {
 // Load redeem page when redeem button is clicked.
 $("#redeem-btn").on("click", function() {
     let code = $("#redeem-code-input").val();
-    chrome.tabs.create({
-        url: chrome.i18n.getMessage("redeemUrl") + encodeURIComponent(code)
-    });
+    /** Testing
+    chrome.storage.local.get("redeemUsingAPI", (data) => {
+        if (data.redeemUsingAPI) {
+            fetch()
+        } else {
+        }
+    })*/
+    const url = chrome.i18n.getMessage("redeemUrl") + encodeURIComponent(code)
+    console.log("Opening new tab ", url)
+    chrome.tabs.create({url});
 })
 
 // Launch options page when clicked

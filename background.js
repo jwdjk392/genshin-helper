@@ -1,4 +1,5 @@
 chrome.runtime.onStartup.addListener(() => {
+    reRegisterContextMenu()
     chrome.storage.local.get("autoCheckIn", (data) => {
         if (data.autoCheckIn) {
             console.log("Auto check in...")
@@ -8,6 +9,27 @@ chrome.runtime.onStartup.addListener(() => {
         }
     })
 })
+
+function reRegisterContextMenu() {
+    chrome.contextMenus.removeAll(() => {
+        chrome.contextMenus.create({
+            title: chrome.i18n.getMessage("contextMenuRedeem"),
+            id: "redeem",
+            contexts: ["selection"]
+        })
+    })
+
+    chrome.contextMenus.onClicked.addListener((data) => {
+        if (data.menuItemId == "redeem") {
+            console.log(data.selectionText)
+            let code = data.selectionText.replace("/\s+/g", '')
+            const url = chrome.i18n.getMessage("redeemUrl") + encodeURIComponent(code)
+            console.log("Opening new tab ", url)
+            chrome.tabs.create({url});
+        }
+    })
+}
+
 
 /**
  * Auto check in
