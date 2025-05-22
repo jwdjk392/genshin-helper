@@ -23,7 +23,7 @@ This extension is fully open-source and transparent.
 ### Via web store
 Click the link for your browser and then click install.
 - Naver Whale Browser: [https://store.whale.naver.com/detail/mfgkhldgnockogpfcmbgejdonnecmkch](https://store.whale.naver.com/detail/mfgkhldgnockogpfcmbgejdonnecmkch)
-- Microsoft Edge: Currently under review.
+- Microsoft Edge: [https://microsoftedge.microsoft.com/addons/detail/hpjomipcldlnfgamphalcppkpdfknolc](https://microsoftedge.microsoft.com/addons/detail/hpjomipcldlnfgamphalcppkpdfknolc)
 ### Manually
 This method is compatible with most of chromium based browsers.
 1. Download .zip file from latest [release](https://github.com/jwdjk392/genshin-helper/releases).

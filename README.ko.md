@@ -22,7 +22,7 @@
 ### 웹 스토어를 통한 설치
 사용하는 브라우저에 맞는 설치 링크를 이용해서 접속한 후 설치하세요.
 - 네이버 웨일 브라우저: [https://store.whale.naver.com/detail/mfgkhldgnockogpfcmbgejdonnecmkch](https://store.whale.naver.com/detail/mfgkhldgnockogpfcmbgejdonnecmkch)
-- MS 엣지 브라우저: 심사중
+- MS 엣지 브라우저: [https://microsoftedge.microsoft.com/addons/detail/hpjomipcldlnfgamphalcppkpdfknolc](https://microsoftedge.microsoft.com/addons/detail/hpjomipcldlnfgamphalcppkpdfknolc)
 ### 수동 설치
 크로뮴 기반 브라우저라면 대부분 호환됩니다.
 1. 최신 [릴리즈](https://github.com/jwdjk392/genshin-helper/releases)에서 ```.zip``` 파일을 다운로드하세요.
