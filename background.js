@@ -1,3 +1,7 @@
+chrome.runtime.onInstalled.addListener(() => {
+    reRegisterContextMenu()
+})
+
 chrome.runtime.onStartup.addListener(() => {
     reRegisterContextMenu()
     chrome.storage.local.get("autoCheckIn", (data) => {
