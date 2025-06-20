@@ -17,7 +17,7 @@ async function init() {
 
 // Page load event - will send data to analytics when extension opens.
 window.addEventListener('load', () => {
-    Analytics.firePageViewEvent(document.title, document.location.href)
+    Analytics.firePageViewEvent(document.title, document.location.href, {version: chrome.runtime.getManifest().version})
     console.log("ANALYTICS: Sent to analytics that the page loaded.")
 })
 
