@@ -6,7 +6,7 @@ addEventListener("unhandledrejection", async (event) => {
 
 chrome.runtime.onInstalled.addListener(() => {
     reRegisterContextMenu()
-    Analytics.fireEvent("install")
+    Analytics.fireEvent("install", {version: chrome.runtime.getManifest().version})
     console.log("New install detected!")
 })
 
