@@ -1,3 +1,5 @@
+import Analytics from '../scripts/google-analytics.js'
+
 init();
 
 let accounts = []
@@ -12,6 +14,12 @@ async function init() {
     displayVersion()
     console.log("Load done.")
 }
+
+// Page load event - will send data to analytics when extension opens.
+window.addEventListener('load', () => {
+    Analytics.firePageViewEvent(document.title, document.location.href)
+    console.log("ANALYTICS: Sent to analytics that the page loaded.")
+})
 
 // Load language data
 function loadLocale() {

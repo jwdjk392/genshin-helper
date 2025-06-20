@@ -8,6 +8,17 @@ English | [한국어](https://github.com/jwdjk392/genshin-helper/blob/main/READM
 - Redeem codes
 ## Hey! Is this safe to use? Wouldn't this get my account hacked?
 > Absolutely safe. We do not collect or save your sensitive information. Everything is processed inside your browser and sent nowhere except ```*.hoyolab.com``` and ```hoyoverse.com```
+### UPDATE: We utilize analitics information.
+We now utilize some of analitics information to know and analyze potential problems you may have and to know how users are using this extension. This is collected via Google Analytics.
+#### What we collect
+We randomly generate an unique user id and save it in your browser and send it with analytics information.
+- Install data - to know how many users are using this.
+- Popup open event - Sends page load event when popup opens.
+- Error - When there is error in program. Note that when the error is related with HoYoLab or HoYoVerse, then the response from HoYo may be sent to analytics.
+- Auto check in event - Sends an event when auto check in succeeds.
+
+If you don't trust me, then you can check the related code. These codes are in ```scripts/google-analytics.js``` (The main analytics module) and ```popup/popup.js``` (Triggers popup open event), ```background.js``` (Triggers auto check in event, install, and error event.)
+
 ### How it works:
 1. The extension declares access permission to ```*.hoyolab.com``` in its manifest file.
 2. When the extension makes a request to Hoyolab or Hoyoverse APIs, **your browser automatically includes any relevant cookies** associated with those domains (if you're logged in).
@@ -20,6 +31,7 @@ This extension is fully open-source and transparent.
 ## License
 ```GNU GPLv3```
 ## How to install
+> Don't forget to check above to make sure what information we process. By using this extension, you are consenting to processing this information.
 ### Via web store
 Click the link for your browser and then click install.
 - Naver Whale Browser: [https://store.whale.naver.com/detail/mfgkhldgnockogpfcmbgejdonnecmkch](https://store.whale.naver.com/detail/mfgkhldgnockogpfcmbgejdonnecmkch)

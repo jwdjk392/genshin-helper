@@ -1,5 +1,13 @@
+import Analytics from "./scripts/google-analytics.js"
+
+addEventListener("unhandledrejection", async (event) => {
+    Analytics.fireErrorEvent(event.reason)
+})
+
 chrome.runtime.onInstalled.addListener(() => {
     reRegisterContextMenu()
+    Analytics.fireEvent("install")
+    console.log("New install detected!")
 })
 
 chrome.runtime.onStartup.addListener(() => {
@@ -57,6 +65,7 @@ function autoCheckIn() {
                             message: chrome.i18n.getMessage("notifCheckInDoneMessage"),
                             iconUrl: "./icons/icon128.png"
                         })
+                        Analytics.fireEvent("auto_checkin")
                     } else {
                         // Hoyoverse error while checking in
                         console.error("Hoyoverse error while requesting check in. E: ", result.message)
@@ -66,6 +75,7 @@ function autoCheckIn() {
                             message: chrome.i18n.getMessage("notifCheckInStatusLoadFailMessage") + result.message,
                             iconUrl: "./icons/icon128.png"
                         })
+                        Analytics.fireErrorEvent("auto_checkin_error", {e: null, hyvResponse: result})
                     }
                 }).catch((e) => {
                     console.error("Error while requesting check in to hoyoverse. E: ", e)
@@ -75,6 +85,7 @@ function autoCheckIn() {
                         message: chrome.i18n.getMessage("notifCheckInStatusLoadFailMessage") + e.message,
                         iconUrl: "./icons/icon128.png"
                     })
+                    Analytics.fireErrorEvent("auto_checkin_error", {e, hyvResponse: null})
                 })
             }
         } else if (result.checkInData.retcode == -100) {
@@ -95,6 +106,7 @@ function autoCheckIn() {
                 message: chrome.i18n.getMessage("notifCheckInStatusLoadFailMessage") + result.checkInData.message,
                 iconUrl: "./icons/icon128.png"
             })
+            Analytics.fireErrorEvent("auto_checkin_error", {e: null, hyvResponse: result})
         }
     }).catch((e) => {
         // Can't send HTTP request to hoyolab.
@@ -105,6 +117,7 @@ function autoCheckIn() {
             message: chrome.i18n.getMessage("notifCheckInStatusLoadFailMessage") + e.message,
             iconUrl: "./icons/icon128.png"
         })
+        Analytics.fireErrorEvent("auto_checkin_error", {e, hyvResponse: null})
     })
 }
 
